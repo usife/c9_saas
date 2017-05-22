@@ -13,16 +13,45 @@
  *= require_tree .
  *= require_self
  */
-
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
-h1, h2, h3 {
-    font-family: helvetica, sans-serif;
+@import 'compass/css3';
+
+
+h1 {
+	font-family: helvetica;
 }
 
-li {
-    list-style-type: none;
-    float: left;
-    padding-right: 20px;
+.navbar, .home-callout {
+	background: linear-gradient(to right, #FFC371, #FF5F6D);
+ }
+ 
+.navbar {
+	border: none;
+	padding: 0 0 10px 0;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 24px;
+	font-weight: bold;
+}
+ 
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	opacity: 0.75;
+	font-family: helvetica;
+	letter-spacing:2px;
+	&:hover {
+		color: #5e5e5e;
+	}
+}
+
+.home-callout {
+	 color: white;
+	 margin-top: -20px;
+	 padding: 100px 0 600px 0;
 }
